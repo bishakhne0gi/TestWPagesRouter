@@ -13,6 +13,9 @@ export async function getServerSideProps({ req }: { req: any }) {
     if (data.country_name) {
       countryName = data.country_name;
     }
+    if (countryName === "India") {
+      isFromIndia = true;
+    }
   } catch (error) {
     console.error("Error fetching IP geolocation:", error);
   }
