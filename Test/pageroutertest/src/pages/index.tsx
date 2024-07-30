@@ -21,6 +21,7 @@ export async function getServerSideProps({ req }: { req: any }) {
     props: {
       ip,
       isFromIndia,
+      countryName,
     },
   };
 }
